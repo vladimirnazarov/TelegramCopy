@@ -33,23 +33,24 @@ android {
 }
 
 dependencies {
-    implementation "com.mikepenz:materialdrawer:8.4.5"
+    def lifecycle_version = "2.4.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
 
-    implementation 'androidx.core:core-ktx:1.9.0'
-    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation "com.mikepenz:materialdrawer:7.0.0"
+
+    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    implementation "androidx.recyclerview:recyclerview:1.6.0"
-    implementation "androidx.annotation:annotation:1.6.0"
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation "androidx.annotation:annotation:1.1.0"
     implementation "androidx.constraintlayout:constraintlayout:2.1.4"
 
 // Add for NavController support
-    implementation "com.mikepenz:materialdrawer-nav:8.4.5"
-
-// Add for Android-Iconics support
-    implementation "com.mikepenz:materialdrawer-iconics:8.4.5"
+    implementation "com.mikepenz:materialdrawer-nav:7.0.0"
 }
