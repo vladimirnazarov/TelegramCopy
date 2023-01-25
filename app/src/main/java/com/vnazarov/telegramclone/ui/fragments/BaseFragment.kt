@@ -1,23 +1,26 @@
-package com.vnazarov.telegramclone.ui
+package com.vnazarov.telegramclone.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.vnazarov.telegramclone.databinding.FragmentSettingsBinding
 
-class SettingsFragment: Fragment() {
+open class BaseFragment(private val layout: Int): Fragment() {
 
-    private lateinit var mBinding: FragmentSettingsBinding
+    private lateinit var mRootView: View
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        mBinding = FragmentSettingsBinding.inflate(layoutInflater)
+        mRootView = inflater.inflate(layout, container, false)
 
-        return mBinding.root
+        return mRootView
+    }
+
+    override fun onStart() {
+        super.onStart()
     }
 }
