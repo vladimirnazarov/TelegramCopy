@@ -1,10 +1,11 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppThemeLight" parent="Theme.Material3.Light">
+    <style name="AppThemeLight" parent="MaterialDrawerTheme">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorAccent</item>
 
         <item name="windowNoTitle">true</item>
 
@@ -24,10 +25,10 @@
 
     </style>
 
-    <style name="AppThemeDark" parent="Theme.Material3.Dark">
+   <!-- <style name="AppThemeDark" parent="MaterialDrawerTheme"> -->
 
         <!-- TODO -->
 
-    </style>
+    <!-- </style> -->
 
 </resources>
