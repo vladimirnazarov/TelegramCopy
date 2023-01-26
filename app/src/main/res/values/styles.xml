@@ -42,4 +42,9 @@
         <item name="android:layout_marginEnd">@dimen/horizontal_margin</item>
     </style>
 
+    <style name="actionMenu" parent="Theme.AppCompat.Light">
+        <item name="background">@color/colorAccent</item>
+        <item name="actionMenuTextColor">@color/colorBlack</item>
+    </style>
+
 </resources>

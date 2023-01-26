@@ -6,6 +6,7 @@
         <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:colorBackground">@color/colorAccent</item>
+        <item name="popupTheme">@style/actionMenu</item>
 
         <item name="windowNoTitle">true</item>
 
