@@ -4,9 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/drawable/header.xml" value="0.114" />
+        <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/drawable/ripple_effect.xml" value="0.114" />
         <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/layout/fragment_chats.xml" value="0.22826086956521738" />
-        <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/layout/fragment_settings.xml" value="0.2956204379562044" />
+        <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/layout/fragment_settings.xml" value="0.2" />
       </map>
     </option>
   </component>
