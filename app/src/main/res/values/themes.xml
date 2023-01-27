@@ -8,6 +8,8 @@
         <item name="android:colorBackground">@color/colorAccent</item>
         <item name="popupTheme">@style/actionMenu</item>
 
+        <item name="colorControlActivated">@color/colorPrimary</item>
+
         <item name="windowNoTitle">true</item>
 
         <!-- MaterialDrawer specific values -->
