@@ -8,6 +8,8 @@ import com.vnazarov.telegramclone.activities.RegisterActivity
 import com.vnazarov.telegramclone.databinding.ActivityMainBinding
 import com.vnazarov.telegramclone.ui.fragments.ChatsFragment
 import com.vnazarov.telegramclone.ui.objects.AppDrawer
+import com.vnazarov.telegramclone.utilits.replaceActivity
+import com.vnazarov.telegramclone.utilits.replaceFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -41,13 +43,10 @@ class MainActivity : AppCompatActivity() {
 
             mAppDrawer.create()
 
-            supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.data_container, ChatsFragment())
-                .commit()
+            replaceFragment(ChatsFragment())
+            
         } else {
-            val intent = Intent(this, RegisterActivity::class.java)
-            startActivity(intent)
+            replaceActivity(RegisterActivity())
         }
     }
 }

@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar
 import com.vnazarov.telegramclone.R
 import com.vnazarov.telegramclone.databinding.ActivityRegisterBinding
 import com.vnazarov.telegramclone.ui.fragments.RegistrationPhoneFragment
+import com.vnazarov.telegramclone.utilits.replaceFragment
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -26,9 +27,6 @@ class RegisterActivity : AppCompatActivity() {
         setSupportActionBar(mToolbar)
         title = "Your phone"
 
-        supportFragmentManager
-            .beginTransaction()
-            .add(R.id.register_data_container, RegistrationPhoneFragment())
-            .commit()
+        replaceFragment(RegistrationPhoneFragment())
     }
 }
