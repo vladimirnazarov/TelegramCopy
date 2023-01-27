@@ -7,9 +7,14 @@
         <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/drawable/ic_btn_action_menu.xml" value="0.114" />
         <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/drawable/ic_button_action_menu_change_name.xml" value="0.114" />
         <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/drawable/ic_button_action_menu_exit.xml" value="0.114" />
+        <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/drawable/ic_button_next.xml" value="0.114" />
         <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/drawable/ripple_effect.xml" value="0.114" />
         <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/layout/activity_register.xml" value="0.22826086956521738" />
         <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/layout/fragment_chats.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/layout/fragment_registration.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/layout/fragment_registration_code.xml" value="0.2076923076923077" />
+        <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/layout/fragment_registration_phone.xml" value="0.22826086956521738" />
         <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/layout/fragment_settings.xml" value="0.2" />
         <entry key="..\:/Android/Projects/TelegramClone/app/src/main/res/menu/settings_action_menu.xml" value="0.2" />
       </map>
