@@ -13,6 +13,7 @@ import com.mikepenz.materialdrawer.model.ProfileDrawerItem
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem
 import com.vnazarov.telegramclone.R
 import com.vnazarov.telegramclone.ui.fragments.SettingsFragment
+import com.vnazarov.telegramclone.utilits.replaceFragment
 
 class AppDrawer(val mainActivity: AppCompatActivity, private val toolbar: Toolbar) {
 
@@ -108,11 +109,7 @@ class AppDrawer(val mainActivity: AppCompatActivity, private val toolbar: Toolba
 
                     when (position){
 
-                        7 -> mainActivity.supportFragmentManager
-                            .beginTransaction()
-                            .addToBackStack(null)
-                            .replace(R.id.data_container, SettingsFragment())
-                            .commit()
+                        7 -> mainActivity.replaceFragment(SettingsFragment())
                     }
 
                     return false
