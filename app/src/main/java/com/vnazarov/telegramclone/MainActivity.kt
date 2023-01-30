@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
+import com.google.firebase.auth.FirebaseAuth
 import com.vnazarov.telegramclone.activities.RegisterActivity
 import com.vnazarov.telegramclone.databinding.ActivityMainBinding
 import com.vnazarov.telegramclone.ui.fragments.ChatsFragment
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mBinding: ActivityMainBinding
     private lateinit var mToolbar: Toolbar
     private lateinit var mAppDrawer: AppDrawer
+    private lateinit var mAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,11 +36,13 @@ class MainActivity : AppCompatActivity() {
     private fun initFields() {
         mToolbar = mBinding.mainToolbar
         mAppDrawer = AppDrawer(this, mToolbar)
+
+        mAuth = FirebaseAuth.getInstance()
     }
 
     private fun initFunc() {
 
-        if(false) {
+        if(mAuth.currentUser != null) {
             setSupportActionBar(mToolbar)
 
             mAppDrawer.create()
