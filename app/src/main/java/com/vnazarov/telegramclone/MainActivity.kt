@@ -9,6 +9,7 @@ import com.vnazarov.telegramclone.activities.RegisterActivity
 import com.vnazarov.telegramclone.databinding.ActivityMainBinding
 import com.vnazarov.telegramclone.ui.fragments.ChatsFragment
 import com.vnazarov.telegramclone.ui.objects.AppDrawer
+import com.vnazarov.telegramclone.utilits.AUTH
 import com.vnazarov.telegramclone.utilits.replaceActivity
 import com.vnazarov.telegramclone.utilits.replaceFragment
 
@@ -17,7 +18,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mBinding: ActivityMainBinding
     private lateinit var mToolbar: Toolbar
     private lateinit var mAppDrawer: AppDrawer
-    private lateinit var mAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,12 +37,12 @@ class MainActivity : AppCompatActivity() {
         mToolbar = mBinding.mainToolbar
         mAppDrawer = AppDrawer(this, mToolbar)
 
-        mAuth = FirebaseAuth.getInstance()
+        AUTH = FirebaseAuth.getInstance()
     }
 
     private fun initFunc() {
 
-        if(mAuth.currentUser != null) {
+        if(AUTH.currentUser != null) {
             setSupportActionBar(mToolbar)
 
             mAppDrawer.create()
