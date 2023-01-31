@@ -9,6 +9,7 @@ import com.google.firebase.auth.PhoneAuthProvider
 import com.vnazarov.telegramclone.MainActivity
 import com.vnazarov.telegramclone.R
 import com.vnazarov.telegramclone.activities.RegisterActivity
+import com.vnazarov.telegramclone.utilits.AUTH
 import com.vnazarov.telegramclone.utilits.replaceActivity
 import com.vnazarov.telegramclone.utilits.replaceFragment
 import com.vnazarov.telegramclone.utilits.showToast
@@ -19,16 +20,13 @@ class RegistrationPhoneFragment: Fragment(R.layout.fragment_registration_phone) 
 
     private lateinit var mPhoneNumber: String
     private lateinit var mCallback: PhoneAuthProvider.OnVerificationStateChangedCallbacks
-    private lateinit var mAuth: FirebaseAuth
 
     override fun onStart() {
         super.onStart()
 
-        mAuth = FirebaseAuth.getInstance()
-
         mCallback = object : PhoneAuthProvider.OnVerificationStateChangedCallbacks(){
             override fun onVerificationCompleted(credential: PhoneAuthCredential) {
-                mAuth.signInWithCredential(credential).addOnCompleteListener {
+                AUTH.signInWithCredential(credential).addOnCompleteListener {
                     if (it.isSuccessful){
                         showToast("Welcome")
                         (activity as RegisterActivity).replaceActivity(MainActivity())
