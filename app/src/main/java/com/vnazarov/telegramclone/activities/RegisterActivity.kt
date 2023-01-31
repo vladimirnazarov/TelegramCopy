@@ -27,6 +27,6 @@ class RegisterActivity : AppCompatActivity() {
         setSupportActionBar(mToolbar)
         title = "Your phone"
 
-        replaceFragment(RegistrationPhoneFragment())
+        replaceFragment(RegistrationPhoneFragment(), false)
     }
 }

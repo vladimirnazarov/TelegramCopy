@@ -2,11 +2,10 @@ package com.vnazarov.telegramclone.ui.fragments
 
 import androidx.fragment.app.Fragment
 import com.google.firebase.FirebaseException
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthOptions
 import com.google.firebase.auth.PhoneAuthProvider
-import com.vnazarov.telegramclone.MainActivity
+import com.vnazarov.telegramclone.activities.MainActivity
 import com.vnazarov.telegramclone.R
 import com.vnazarov.telegramclone.activities.RegisterActivity
 import com.vnazarov.telegramclone.utilits.AUTH

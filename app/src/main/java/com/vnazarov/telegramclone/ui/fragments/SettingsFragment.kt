@@ -3,7 +3,7 @@ package com.vnazarov.telegramclone.ui.fragments
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
-import com.vnazarov.telegramclone.MainActivity
+import com.vnazarov.telegramclone.activities.MainActivity
 import com.vnazarov.telegramclone.R
 import com.vnazarov.telegramclone.activities.RegisterActivity
 import com.vnazarov.telegramclone.utilits.AUTH

@@ -2,7 +2,7 @@ package com.vnazarov.telegramclone.ui.fragments
 
 import androidx.fragment.app.Fragment
 import com.google.firebase.auth.PhoneAuthProvider
-import com.vnazarov.telegramclone.MainActivity
+import com.vnazarov.telegramclone.activities.MainActivity
 import com.vnazarov.telegramclone.R
 import com.vnazarov.telegramclone.activities.RegisterActivity
 import com.vnazarov.telegramclone.utilits.AUTH
@@ -11,7 +11,7 @@ import com.vnazarov.telegramclone.utilits.replaceActivity
 import com.vnazarov.telegramclone.utilits.showToast
 import kotlinx.android.synthetic.main.fragment_registration_code.*
 
-class RegistrationCodeFragment(val mPhoneNumber: String, val id: String) : Fragment(R.layout.fragment_registration_code) {
+class RegistrationCodeFragment(private val mPhoneNumber: String, val id: String) : Fragment(R.layout.fragment_registration_code) {
 
     override fun onStart() {
         super.onStart()
