@@ -1,4 +1,4 @@
-package com.vnazarov.telegramclone
+package com.vnazarov.telegramclone.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
 
             mAppDrawer.create()
 
-            replaceFragment(ChatsFragment())
+            replaceFragment(ChatsFragment(), false)
             
         } else {
             replaceActivity(RegisterActivity())
