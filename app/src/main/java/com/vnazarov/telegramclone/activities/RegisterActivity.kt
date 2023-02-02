@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar
 import com.vnazarov.telegramclone.R
 import com.vnazarov.telegramclone.databinding.ActivityRegisterBinding
 import com.vnazarov.telegramclone.ui.fragments.RegistrationPhoneFragment
+import com.vnazarov.telegramclone.utilits.initFireBase
 import com.vnazarov.telegramclone.utilits.replaceFragment
 
 class RegisterActivity : AppCompatActivity() {
@@ -18,6 +19,8 @@ class RegisterActivity : AppCompatActivity() {
 
         mbinding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(mbinding.root)
+
+        initFireBase()
     }
 
     override fun onStart() {
